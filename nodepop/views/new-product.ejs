@@ -1,0 +1,22 @@
+<%- include('header.ejs') %>
+<div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="card p-4 shadow-lg rounded-3 w-50 bg-light">
+        <h1 class="text-center mb-4 text-dark">New Product</h1>
+
+        <form method="POST">
+            <div class="mb-3">
+                <label for="productName" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="productName" placeholder="Enter product name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="productPrice" class="form-label">Price</label>
+                <input type="number" name="price" class="form-control" id="productPrice" placeholder="Enter product price" required>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-lg w-100">Submit</button>
+        </form>
+    </div>
+</div>
+
+<%- include('footer.ejs') %>
